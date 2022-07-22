@@ -9,7 +9,7 @@ Find the tech case on Github: https://github.com/kuddl/tech_case_memory_game
 ```
 - Download the project to your machine
 - Open ZIP file and open HTML file in browser
-- If you want to be safe, connect it to a repository with your GitHub account
+- If you want to be safe, connect/fork it to a repository with your GitHub account
 ```
 
 > Just make sure you don't lose any work!
@@ -19,7 +19,7 @@ Find the tech case on Github: https://github.com/kuddl/tech_case_memory_game
 - Look at the code and get familiar with it before doing anything.
 - Read all the instructions before starting so you get an idea of the order in which you will build the page.
 - Please stop/record the time while working on the assignment. It should be less than 3h. If you cannot finish within this timeframe, just stop anyway, we still have enough code to talk about. (just be honest to yourself and to us and keep the times "real" ;) ).
-- Bring your solutions to the tech interview session. If we do it remote: You can share your screen in our meeting (MS Teams), or you can use your BlitzStack fork of the project).
+- Bring your solutions to the tech interview session. If we do it remote: You can share your screen in our meeting (MS Teams), or you can use your Github fork of the project).
 - When you finish the assignment, we will set up (probably already have) a tech interview (approx. 1h - 2h), where we discuss the solutions and topics around the challenges. There is no perfect score for the assignment. We will use it mainly as a basis for discussion.
 - It should be a little fun to work with code, so do not worry, and have some fun.
 
@@ -29,7 +29,7 @@ Find the tech case on Github: https://github.com/kuddl/tech_case_memory_game
 You neighbor wants to launch a new online game: Memory (brand new idea! never seen before)
 
 A junior developer in your team already got onto it, and create a rough prototype.
-But since the neighbor wants to see progress, we will have the game ready for presentation.
+But since the neighbor wants to see progress, we will have the game as a prototype ready for presentation.
 
 A few days before the meeting with the client, the junior developer shows you the code since he has some problems and needs your help.
 So you step in and you will help your colleague.
