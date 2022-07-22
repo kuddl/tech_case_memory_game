@@ -1,103 +1,95 @@
-# Experience day exercise
+# Plain HTML-CSS-JS Exercice: [Memory Game]
 
-## Blitzstack project
+## Setup 
 
-You can find this challenge here:
-https://stackblitz.com/edit/memory-tech-case
+Find the tech case on [StackBlitz, Code SandBox, ...] [[HERE](https://stackblitz.com/edit/memory-tech-case)](https://stackblitz.com/edit/memory-tech-case). 
 
-⚠️ Blitzstack works best in Chrome (images are broken in Firefox (CSP header))
+And please do one of the following:
 
-## Setup
-
-To start and work on the case please do one of the following:
-
-### Setup on stackblitz
+### Setup your environment on [StackBlitz, Code SandBox, ...]
 
 ```
-- fork the stackblitz project
-- if you want to play save, connect it to a repository with your github account
+- Fork the StackBlitz project (top left button)
+- If you want to be safe, connect it to a repository with your GitHub own account
 ```
 
 ### Setup on your own machine
 
 ```
-- fork the stackblitz project
-- download the project to your machine (in project pane there is a "cloud with arrow" button)
-- unzip folder
-- `npm install` as usual and start the project `npm run dev`
-- if you want to play save, connect it to a repository with your github account
+- Download the project to your machine (Icon with cloud and arrrow)
+- Open ZIP file and open HTML file in browser
+- If you want to be safe, connect it to a repository with your GitHub account
 ```
 
-## Start working
+> Just make sure you don't lose any work!
 
-- just make sure you will not loose any code
-- look at the code and get familiar with it
-- you have tailwind already set up for you, but you can also use pure CSS (just use the index.css file or `<style>` tags in the SFC)
-- please stop/record the time you work on the assignment. It should be less than 4h. If you cannot finish within 4 hours, just stop anyway, we still have enough code to talk about. (just be honest to yourself and us and keep the times "real" ;) )
-- Bring your solutions to the tech interview session. If we do it remote: You can share your screen in our meeting (MS Teams), or you can setup a online "editor" (we recommend blitzstack.com)
+### Notes
 
-When you finish the assignment, we will set up (probably already have) a tech interview (approx. 1h), where we discuss the solutions and topics around the challenges. There is no (perfect) score for the assignment. We will use it mainly for a base of discussion.
-
-It also should be a little fun to work with code. So do not worry, and have fun.
+- Look at the code and get familiar with it before doing anything.
+- Read all the instructions before starting so you get an idea of the order in which you will build the page.
+- Please stop/record the time while working on the assignment. It should be less than 3h. If you cannot finish within this timeframe, just stop anyway, we still have enough code to talk about. (just be honest to yourself and to us and keep the times "real" ;) ).
+- Bring your solutions to the tech interview session. If we do it remote: You can share your screen in our meeting (MS Teams), or you can use your BlitzStack fork of the project).
+- When you finish the assignment, we will set up (probably already have) a tech interview (approx. 1h - 2h), where we discuss the solutions and topics around the challenges. There is no perfect score for the assignment. We will use it mainly as a basis for discussion.
+- It should be a little fun to work with code, so do not worry, and have some fun.
 
 ## The Story
 
-Our client has a VERY simple website.
-He loves the simpsons. And he wants to show some quotes of the simpson characters on his website.
-Since he knows some HTML and CSS he already started the project. But then gave up.
-You pick up from here.
+```
+You neighbor wants to launch a new online game: Memory (brand new idea! never seen before)
 
-## Your challenges
+A junior developer in your team already got onto it, and create a rough prototype.
+But since the neighbor wants to see progress, we will have the game ready for presentation.
 
-### 0.) Center the headline
+A few days before the meeting with the client, the junior developer shows you the code since he has some problems and needs your help.
+So you step in and you will help your colleague.
 
-As a little warm up:
+The game should be familiar (even though it never existed before ;) ) 
+The game is playable but has some "flaws". You will fix them.
+Keep reading for more information. 
+```
 
-- horizontally center the headline "Simpson Quotes" in the page.
-- center the quote under the image
-- output the name of the character as well (you choose any "design")
+## Your tasks
 
-### 1.) Fetch quotes from api
+### 0. As a little warm up
+- Go to google fonts, and find the "Merriweather" font. Use it in the project for all text.
 
-The client used some dummy data in the `List.vue` file. Make a request to the Api and fetch 3 items and display them (do not worry about layout yet).
+### 1. Make the user names persistent
+As you might have experienced, in the first screen, you will see a form to fill in the names of the players. As soon as you start the game, the names will be visible at the top. But if you reload the page, you start at the first screen.
 
-API is `https://thesimpsonsquoteapi.glitch.me/quotes`
+The acceptance criteria : 
+- make the names persistent (choose any technique), so that when you reload the page, the names are still valid and shown at the top, and the board is ready to play.
+- it is OK that the board will "restart" with a reload. At least we do not have to "log in" again
+- be prepared to present your solution in the tech interview
 
-### 2.) Responsive layout
+### 2. Create a "real world card flip animation"
+When you click on the card, the "image is shown"; but in a boring way
+To impress your neighbor with the skills of our frontend team, we want to create a sexy "card flip animation". 
 
-The client requests a responsive layout:
+The acceptance criteria : 
+- make a sexy card flip animation (like[ this one](https://www.w3schools.com/howto/howto_css_flip_card.asp))
+- it should work for "click" and for the "hide" of the cards
+- make sure that the "hide all cards" action is also animated
+- Nice to have: the animation should be CSS only (the click handling can be still Javascript)
+- Notice: you are allowed to search the internet for solutions and implement them here. But make sure you understand, how it works and can explain it in the interview.
 
-- on mobile: all cards full width (keep some margins to the edges)
-- on tablet: 3 cards in one row
-- on desktop: 5 cards in one row
 
-(hint: use reasonable sizes for the viewports; up to you; maybe a "container" will be good for very large screens)
+### 2. Refactoring the code
+As you implemented the first 2 tasks, you probably changed already some code and improved the code quality.
+The code of our junior dev is not ideal; it works, but is not "pretty" nor "stable".
+You will refactor the code and in our tech interview, a Merkle Dev takes the role of the junior dev, and you will "explain" and "teach" him, what you have changed and why.
+Take a few minutes (approx. 30 minutes) and do some refactoring to the code.
+The acceptance criteria : 
+- Important: DO NOT re-write the whole script. Use the current code and improve it step by step 
+- Look at only 2 aspects of the code to refactor. Use the 2 "biggest pain points" in your understanding (e.g.: refactor some parts into functions; better naming for variables; splitting the code in files)
+- make sure you have a "copy" of the before and after state available in the interview to follow the steps of your refactoring (bad example: senior dev to junior dev:  "... this is the new code, it should look like this. Now please follow my example!")
 
-### 3.) Buttons to load 5, 10, 15 quote
 
-The client requests 3 buttons on the bottom of the page.
+### N.Food for thought / discussion
 
-- Text: "5 Quotes are good" if you click on it fetches 5 Quotes
-- Text: "10 Quotes are better" if you click on it fetches 10 Quotes
-- Text: "15 Quotes are the best" if you click on it fetches 15 Quotes
+You are now done with the coding part of this test. This section is not about code and does **not require you to write any code**. Read the bullet points, think about the questions, and maybe write some short notes about them. We will discuss these topics in our interview.
 
-You are free to "design" the buttons as you like.
-(hint: later we will discuss what you picked (e.g. `<button> vs <a>`))
-
-### 4.) Make it sort
-
-At the top of the file, you will find 2 "Buttons" for sorting. The component was already created, but the client couldn't get it to work.
-
-- make the 2 buttons work
-- make use of ONE component and use it twice
-- when the sorting is active, the button should somehow be "highlighted" (you choose the style)
-
-### 5.) No Code question / discussion
-
-This challenge is not about code. You do not have to write any code. But read the bullet points and think about the questions and maybe write some short notes about it. We will discuss these topics in our session.
-
-#### Challenges
-
-- After we implemented the "load 5/10/15" buttons, we found out, that when the user clicked the buttons multiple times, the API was crashing under the load of too many requests. Prepare an idea (or multiple?) how to prevent the user from sending too many requests to the API. Bring your ideas in "words" / bullet points to the interview. (no code needed)
-- After we deploy our nice website, we found out, that we have some accessibility issues. Can you find some issues about accessability and do you know how to address them? What can we do to make our site more accessible. (Please do not change your code at this point. We never had Accessibility as a requirement, so it's OK to have these issues)
-- Think about the current state of the application. What did the client forget? What issues or ideas do you have as a developer, to make the site more stable and robust. We will discuss.
+- The repository consists of only 3-4 files. What is necessary in your opinion to do or add to this "folder", so that you would call it a "project", that a team can work on in the future (e.g. add Readme.md (for the game not the challenge); add .gitignore; move files into folders ....)
+- The names of the players are now "persistent" (thanks to your work). But the rest of the game is not. What would your proposed solution be, to make it persistent for reloads. (just collect some ideas)
+- 
+ 
+## Good luck and have fun!
