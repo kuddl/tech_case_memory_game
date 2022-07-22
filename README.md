@@ -2,21 +2,12 @@
 
 ## Setup 
 
-Find the tech case on [StackBlitz, Code SandBox, ...] [[HERE](https://stackblitz.com/edit/memory-tech-case)](https://stackblitz.com/edit/memory-tech-case). 
-
-And please do one of the following:
-
-### Setup your environment on [StackBlitz, Code SandBox, ...]
-
-```
-- Fork the StackBlitz project (top left button)
-- If you want to be safe, connect it to a repository with your GitHub own account
-```
+Find the tech case on Github: https://github.com/kuddl/tech_case_memory_game
 
 ### Setup on your own machine
 
 ```
-- Download the project to your machine (Icon with cloud and arrrow)
+- Download the project to your machine
 - Open ZIP file and open HTML file in browser
 - If you want to be safe, connect it to a repository with your GitHub account
 ```
