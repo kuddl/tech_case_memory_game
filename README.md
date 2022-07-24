@@ -64,7 +64,7 @@ The acceptance criteria :
 - Notice: you are allowed to search the internet for solutions and implement them here. But make sure you understand, how it works and can explain it in the interview.
 
 
-### 2. Refactoring the code
+### 3. Refactoring the code
 As you implemented the first 2 tasks, you probably changed already some code and improved the code quality.
 The code of our junior dev is not ideal; it works, but is not "pretty" nor "stable".
 You will refactor the code and in our tech interview, a Merkle Dev takes the role of the junior dev, and you will "explain" and "teach" him, what you have changed and why.
